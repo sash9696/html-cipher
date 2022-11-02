@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        img {
+            width: 80%;
+            height: 400px;
+        }
+
+        .box {
+            height: 40px;
+            background-color: tomato;
+            margin-bottom: 20px;
+        }
+
+        .fifty-percent {
+            width: 50%;
+        }
+
+        .fifty-vw {
+            width: 50vw;
+        }
+
+        .two-hundred-px {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Units in CSS</h1>
+    <!-- Absolute units and Relative units -->
+
+    <!-- px => pixels are called as absolute units. px unit is fixed and itdoes not change due to any other element -->
+
+    <!-- Relative units -->
+    <!--
+    em =>
+    rem =>
+    % => relative to its parent
+    vw =>relative to its viewport's width
+    vh =>
+    <div> 
+        -->
+    <!-- <img
+        src="" /> -->
+    <!-- </div> -->
+
+    <div class="box two-hundred-px">200px</div>
+    <div class="box  fifty-percent">50%</div>
+    <div class="box fifty-vw">50vw</div>
+
+    <div style="border: 1px solid black ; width: 500px; margin-top: 10px;">
+        <div class="box  fifty-percent">50%</div>
+        <div class="box fifty-vw">50vw</div>
+        <div class="box two-hundred-px">200px</div>
+
+    </div>
+
+
+</body>
+
+</html>
