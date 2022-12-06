@@ -1,73 +1,68 @@
+
+
+// console.log('hello world')
+//creating a variable
+// let num = 10
+// let message = 'Hello'
+
+
+// let num = 100, message = 'greetings'
+
+//automatically adds a semicolon
+// let num = 10;
+// console.log(num);
+// let num = 100;
+// console.log(num);
+
+
+//interaction
+
+// alert('hello world')
+
+// let askFromUser = prompt('Enter a number')
+// console.log(askFromUser)
+
+
+// let isProgrammer = confirm('Are you a programmer')
+
+// console.log(isProgrammer)
+
+
 //single line comment
-//console.log(3 + 1)
 
-/*console.log(
-    3
-    +
-     1) multiline comment */
+/*let
+a =
+10 multiline comment */
 
-// alert('Lets study js')
-// alert('Hi everyone')
+//common datatypes 
+//String => text
+//Numbers => int as well as float
+//Arrays => ordered pair of collection [10,20,30]
+//Objects => key value pair {name: 'John'}
+//boolean => true and false
 
-//Variable
-
-// let message; //variable declaration
-// message = 'hello' //variable initialization
-// alert(message)
-
-// let message = 'hello world'
-// alert(message)
-
-// let user = 'john',
-//     age = 20,
-//     message = 'hello';
-
-// console.log(user, age, message)
+// {} => a block
+//Conditional statements
+// if (true) {
+//     alert('hello')
+// }
+// alert('world')
 
 
-// const userBirthday = '18/05/2000';
-// userBirthday = 'abcsdklsan'
+// let year = 2012
+// if (year == 2022) {
+//     alert('You are so smart')
+// } else {
+//     alert('you are so dumb')
+// }
 
+let age = prompt('How old are you')
 
-//Data Types
-//8 types of datatypes
+if (age < 18) {
+    alert('access not allowed ')
+} else if (age < 20) {
+    alert('you have limited access')
+} else {
+    alert('here is you pass to the theater')
 
-//Number
-let n = 123
-n = 20.1234
-//a number can represent both integer and floating point numbers
-
-//special numeric values 
-
-// alert(1 / 0) //Infinity
-
-// alert('text' / 3)  NaN
-
-// var a = '20'
-// var b = 2
-
-
-//BigInt
-//(2power53 - 1) , -(2power53 - 1)
-
-// const bigInt = 31827638126382716381263812638161326813618368126338126381263812638126312836821n
-
-// console.log(typeof bigInt)
-
-//String
-//Boolean
-//null
-//null pointer, nothing, empty, the value is unknown
-// let age = null;
-
-// console.log(typeof age)
-
-//undefined
-//value is not assigned
-let age;
-
-alert(age)
-
-
-
-//objects
+}
