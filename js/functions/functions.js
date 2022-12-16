@@ -1,91 +1,74 @@
-
-//javascript is a synchronous , single threaded language
-//it executes the code line by line 
-//in a specific order top to bottom
-
-// console.log('hello world')
-// if(true){
-//     console.log('inside if condition')
-// }
-// console.log('bye ')
-
+//function declaration
 
 //function declaration
-// function greetings(salutation, name){
 
-//     console.log('hello ' + salutation + " " +  name)
+// function sum(a,b){
+//     console.log(a + b)
 // }
-// greetings('Mr','john')
-
-
-//scope
-//global , local scope
-
-// let username = 'John' //inside the global scope
-
-// //a function can access the variable from outer scope
-// function printName(){ //function is also inside the global scope
-//     let username = 'peter'
-//     console.log(username)
+// sum(10,20)
+// console.log(sum(10,20))
+// function sum(a,b){
+//     return(a + b)
 // }
-// printName()
 
+//function expression
+//when u store a function in a variable 
 
-
-//a function can access the variable from outer scope
-// function printName(){ //function is also inside the global scope
-//     let username = 'peter'
-
+// let sum1 = function sum(a,b){
+//     return a + b
 // }
-// printName()
-// console.log(username)
+// console.log(sum1(10,20))
 
-// //functions
+//anonymous function
+//functions without name
+//store the function in a variable or pass it into other function
+// let sum = function (a,b){ //function expresion
+//     return a + b
+// }
+// console.log(sum(10,20))
 
-// let a = 10
-// x()
-// function x() {
+// function printName(name, callback){
+
+//     console.log(name)
+//     callback()
+// }
+// printName('John', function(){
+//     console.log('anonymous function inside a function')
+// })
+
+
+// function x(){
 //     let a = 20
-//     console.log(a)
-// }
 
-
-// //first javascript assigns memory to the variables as undefined and function
-
-
-// let a = 10
-
-// function x() {
-
-//     return a
-// }
-// console.log(x())
-
-//lexical scoping
-// function x() {
-//     let b = 100
-
-//     function y() {
-
-//         function z() {
-
-//             console.log(b)
-//         }
-//         z()
+//     return function(){
+//         console.log(a)
 //     }
-//     y()
 // }
-// x()
+// // x()()
+// let y = x()
+// y()
 
-function x() {
 
-    let a = 10
+// function x(){
+//     let a = 20
 
-    return function y() {
-        console.log(a)
-    }
-}
+//     return function y(){
+//         console.log(a)
+//     }
+// }
+// // x()()
+// let z = x()
+// z()
 
-let z = x()
-z()
+//arrow functions
+
+// let sum = (a,b) => {
+//     return a + b
+// }
+// console.log(sum(10,20))
+
+// let sum = (a,b) => a + b
+// console.log(sum(10,20))
+
+
 
