@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    background-color: blanchedalmond;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.title {
+    color: blueviolet;
+    font-size: 8rem;
+    text-align: center;
+    opacity: 0.6;
+}
+
+#todoForm {
+    max-width: 100%;
+    width: 400px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input {
+    border: none;
+    font-size: 1.8em;
+    padding: 1em 2em;
+
+}
+
+.input:focus {
+    outline-color: blueviolet;
+}
+
+.small-text {
+    color: rgb(31, 186, 237);
+    margin-top: 2em;
+    text-align: center;
+}
+
+.todos {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.todos li {
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+}
+
+
+.todos li.completed {
+    color: lightgrey;
+    text-decoration: line-through;
+}
