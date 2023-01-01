@@ -19,3 +19,8 @@ function autoText() {
     }
     setTimeout(autoText, speed)
 }
+
+inputElement.addEventListener('input', function (e) {
+
+    speed = 400 / e.target.value
+})
